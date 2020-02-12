@@ -38,8 +38,8 @@ def find_a(array)
   array.select{|string| string.start_with?("a")}
 end
 
-def sum_array(integers)
-  integers.inject{|sum, n| sum + n}
+def sum_array(number)
+  number.inject{|sum, n| sum + n}
 end
 
 def add_s(array)
