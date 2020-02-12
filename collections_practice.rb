@@ -5,7 +5,7 @@ def sort_array_asc(number)
 end
 
 def sort_array_desc(number)
-  integers.sort {|first_num, second_num| second_num <=> first_num}
+  number.sort {|first_num, second_num| second_num <=> first_num}
 end
 
 def sort_array_char_count(strings)
@@ -17,24 +17,21 @@ def swap_elements(strings)
   return strings
 end
 
-def swap_elements_from_to(array, index, destination_index)
-  array[index], array[destination_index] = array[destination_index], array[index]
-  return array
-end
 
-def reverse_array(integers)
-  new_array = integers.reverse
+
+def reverse_array(number)
+  new_array = number.reverse
   new_array
 end
 
 def kesha_maker(array)
-  kesha = []
+  new_array = []
   array.each do |word|
     word_array = word.split ""
     word_array[2] = "$"
-    kesha << word_array.join
+    new_array << word_array.join
   end
-  kesha
+  new_array
 end
 
 def find_a(array)
