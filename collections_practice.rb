@@ -1,10 +1,10 @@
 
 
 def sort_array_asc(number)
-  integers.sort
+  number.sort
 end
 
-def sort_array_desc(integers)
+def sort_array_desc(number)
   integers.sort {|first_num, second_num| second_num <=> first_num}
 end
 
